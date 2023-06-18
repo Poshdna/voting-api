@@ -128,8 +128,8 @@ app.post('/join-us', async(req, res) => {
 databaseConnection()
     .then((result) => { 
         allCollections = result
-    app.listen(port, () => { 
-            console.log(`Api Server is running ${port}`);
+          app.listen(port, () => { 
+              console.log(`Api Server is running ${port}`);
     });
  })
 .catch(() => {

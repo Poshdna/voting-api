@@ -1,8 +1,8 @@
 const allCollections = require('../config/database')
 
-const createUser = (data) => {
+const createUser = async (data) => {
     
-    return allCollections.userCollection.insertOne(data)
+    return await allCollections.userCollection.insertOne(data)
    
 }
 
